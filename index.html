@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="name">Haris Afzal</h1>
+      <p class="tagline">Software Engineer</p>
+
+      <div class="header-divider"></div>
+
+      <div class="contact-row">
+        <a class="contact-item" href="mailto:harisafzal692@gmail.com">
+          <span class="contact-icon">✉</span>
+          <span>harisafzal692@gmail.com</span>
+        </a>
+        <span class="contact-sep">|</span>
+        <a
+          class="contact-item"
+          href="https://www.linkedin.com/in/haris-afzal-888201381/"
+          target="_blank"
+        >
+          <span class="contact-icon contact-li">in</span>
+          <span>https://www.linkedin.com/in/haris-afzal-888201381/</span>
+        </a>
+        <span class="contact-sep">|</span>
+        <a
+          class="contact-item"
+          href="https://github.com/Pengool123"
+          target="_blank"
+        >
+          <span class="contact-icon">⌥</span>
+          <span>https://github.com/Pengool123</span>
+        </a>
+        <span class="contact-sep">|</span>
+        <span class="contact-item">
+          <span class="contact-icon">⌖</span>
+          <span>McKinney, TX</span>
+        </span>
+      </div>
+
+      <p class="bio">
+        I'm a student at The University of Texas at Dallas majoring in Computer
+        Science, graduating in May 2027. Focusing on backend and cloud
+        engineering while living life and learning like there's no tomorrow.
+      </p>
+    </header>
+
+    <section>
+      <h2>Volunteer Work</h2>
+      <div class="card-row">
+        <div class="card exp-card">
+          <div class="job-title">Coder</div>
+          <div class="company">Khidmah UTD</div>
+          <div class="dates">Feb 2026 - May 2026</div>
+          <div class="desc">
+            <li>
+              Work with club members to split up tasks and build the site
+              together
+            </li>
+            <li>
+              Keep the client updated and make changes based on their feedback
+            </li>
+            <li>Use Git to manage everyone's code and avoid conflicts</li>
+            <li>Learn from each other while gaining real-world experience</li>
+          </div>
+        </div>
+
+        <div class="card exp-card">
+          <div class="job-title">Math Tutor</div>
+          <div class="company">PISD</div>
+          <div class="dates">Sept 2021 - May 2024</div>
+          <div class="desc">
+            <li>Volunteered at high schools across DFW</li>
+            <li>Prepared calculus students for AP and IB exams</li>
+            <li>Created and graded assignments with teachers</li>
+            <li>
+              Held private tutoring sessions to break down difficult problems
+            </li>
+          </div>
+        </div>
+
+        <div class="card exp-card">
+          <div class="job-title">Tutor</div>
+          <div class="company">Murphy Learning Center</div>
+          <div class="dates">Oct 2024 - Jan 2024</div>
+          <div class="desc">
+            <li>
+              Prepared students in elementary and middle schools for their next
+              year
+            </li>
+            <li>Created and graded assignments with the instructors</li>
+            <li>Taught in a private and class like setting</li>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>projects</h2>
+      <div class="card-row">
+        <div class="card proj-card">
+          <div class="proj-title">Internal Knowledge Assistant</div>
+          <div class="proj-dates">May 2026</div>
+          <div class="proj-tags">
+            <span class="tag" data-tech="terraform">Terraform</span>
+            <span class="tag" data-tech="aws">AWS Bedrock</span>
+            <span class="tag" data-tech="lambda">Lambda</span>
+            <span class="tag" data-tech="dynamodb">DynamoDB</span>
+          </div>
+          <div class="desc">
+            <li>
+              Built a RAG-based internal knowledge assistant on AWS Bedrock and
+              Lambda
+            </li>
+            <li>
+              Designed full cloud infrastructure as code with Terraform, like
+              API Gateway and DynamoDB
+            </li>
+            <li>
+              Implemented vector search via Bedrock Knowledge Base to quote from
+              company documents
+            </li>
+            <li>
+              Supports multi-turn conversations with persistent chat history
+              stored in DynamoDB per user
+            </li>
+          </div>
+          <a
+            class="proj-link"
+            href="https://github.com/Pengool123/internal-knowledge-assistant"
+            target="_blank"
+            >github</a
+          >
+        </div>
+
+        <div class="card proj-card">
+          <div class="proj-title">S3 Backup Automation</div>
+          <div class="proj-dates">Apr – May 2026</div>
+          <div class="proj-tags">
+            <span class="tag" data-tech="terraform">Terraform</span>
+            <span class="tag" data-tech="aws">AWS</span>
+            <span class="tag" data-tech="lambda">Lambda</span>
+            <span class="tag" data-tech="sns">SNS</span>
+          </div>
+          <div class="desc">
+            <li>
+              Automated S3 backup system using AWS Backup with scheduled weekday
+              jobs and configurable retention policies
+            </li>
+            <li>
+              Built SNS notification pipeline with Lambda to deliver
+              human-readable success/failure alerts via email and SMS
+            </li>
+            <li>
+              Wrote infrastructure as code in Terraform with modular,
+              variable-driven configuration and input validation
+            </li>
+          </div>
+          <a
+            class="proj-link"
+            href="https://github.com/Pengool123/AWS-S3-Backup"
+            target="_blank"
+            >github</a
+          >
+        </div>
+
+        <div class="card proj-card">
+          <div class="proj-title">RoR2 Mod - Even More League Items</div>
+          <div class="proj-dates">Jan – Feb 2026</div>
+          <div class="proj-tags">
+            <span class="tag" data-tech="csharp">C#</span>
+            <span class="tag" data-tech="unity">Unity</span>
+            <span class="tag" data-tech="ror2api">ROR2API</span>
+          </div>
+          <div class="desc">
+            <li>Developed a mod using C#, the Unity Engine, and ROR2API</li>
+            <li>
+              Designed and implemented a custom in-game shop system driven
+              through the chat interface
+            </li>
+            <li>
+              Created 9 custom items, including 5 items that dynamically read
+              and modify the player’s inventory via the custom shop logic
+            </li>
+            <li>
+              Reverse engineered and analyzed API source code to implement
+              advanced features due to limited official documentation
+            </li>
+          </div>
+          <a
+            class="proj-link"
+            href="https://github.com/Pengool123/RoR2-Mod---Even-More-League-of-Legend-Items"
+            target="_blank"
+            >github</a
+          >
+        </div>
+
+        <div class="card proj-card">
+          <img
+            class="proj-img"
+            src="images/jpConjImg.png"
+            alt="Japanese Conjugation Game"
+          />
+          <div class="proj-title">Japanese Conjugation Game</div>
+          <div class="proj-dates">Aug – Nov 2025</div>
+          <div class="proj-tags">
+            <span class="tag" data-tech="godot">Godot</span>
+            <span class="tag" data-tech="csharp">C#</span>
+            <span class="tag" data-tech="json">JSON</span>
+          </div>
+          <div class="desc">
+            <li>
+              Type the Japanese verb or adjective given its conjugated form (ex.
+              polite tense)
+            </li>
+            <li>Written in C# per gaming industry standards</li>
+            <li>
+              Leveraged JSONs to create adjustable word lists and settings
+            </li>
+            <li>
+              Used the Godot game engine to implement timers, scenes, and
+              animations
+            </li>
+          </div>
+          <a
+            class="proj-link"
+            href="https://github.com/Pengool123/Japanese-Conjugation-Game"
+            target="_blank"
+            >github</a
+          >
+        </div>
+
+        <div class="card proj-card">
+          <img
+            class="proj-img"
+            src="images/vnGuesserImg.png"
+            alt="Visual Novel Guesser 2"
+          />
+          <div class="proj-title">Visual Novel Guesser 2</div>
+          <div class="proj-dates">Oct – Nov 2025</div>
+          <div class="proj-tags">
+            <span class="tag" data-tech="svelte">Svelte</span>
+            <span class="tag" data-tech="typescript">TypeScript</span>
+          </div>
+          <div class="desc">
+            <li>
+              Written in TypeScript and Svelte to enable an interactable and
+              reactable UI
+            </li>
+            <li>Implemented auto–complete with array manipulation</li>
+            <li>Including maps, traversals and other optimizations</li>
+            <li>
+              Utilized the Visual Novel Data Base API to get novel tags for
+              hints (ex. mystery)
+            </li>
+          </div>
+          <a
+            class="proj-link"
+            href="https://github.com/Pengool123/Visual-Novel-Guesser"
+            target="_blank"
+            >github</a
+          >
+        </div>
+
+        <div class="card proj-card">
+          <img
+            class="proj-img"
+            src="images/oldVnGuesserImg.jpeg"
+            alt="Visual Novel Guesser"
+          />
+          <div class="proj-title">Visual Novel Guesser</div>
+          <div class="proj-tags">
+            <span class="tag" data-tech="html">HTML</span>
+            <span class="tag" data-tech="css">CSS</span>
+            <span class="tag" data-tech="javascript">JavaScript</span>
+          </div>
+          <div class="desc">
+            <li>
+              The user has 9 guesses, each guess reveals 1 hint (ex. language)
+            </li>
+            <li>Written in JavaScript to enable an interactable UI</li>
+            <li>Implemented auto–complete with array manipulation</li>
+            <li>
+              Utilized the Visual Novel Data Base API to get novel tags for
+              hints (ex. mystery)
+            </li>
+          </div>
+          <a
+            class="proj-link"
+            href="https://github.com/Pengool123/Visual-Novel-Guesser"
+            target="_blank"
+            >github</a
+          >
+        </div>
+
+        <div class="card proj-card">
+          <div class="proj-title">Low Level Tic-Tac-Toe</div>
+          <div class="proj-tags">
+            <span class="tag" data-tech="mips">MIPS Assembly</span>
+          </div>
+          <div class="desc">
+            <li>
+              A player vs computer game, similar to tic-tac-toe, in a 6 by 6
+              table
+            </li>
+            <li>Legal moves are determined by random number generation</li>
+            <li>Written in MIPS assembly</li>
+          </div>
+          <a
+            class="proj-link"
+            href="https://github.com/Pengool123/MIPS-multiplication-game"
+            target="_blank"
+            >github</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

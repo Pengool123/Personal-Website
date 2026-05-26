@@ -1,0 +1,314 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background: #fff;
+  color: #111;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 72px 40px 120px;
+}
+
+/* ── Header ── */
+header {
+  text-align: center;
+  margin-bottom: 80px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #111;
+}
+
+/* Photo placeholder */
+.header-photo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header-photo {
+  width: 110px;
+  height: 110px;
+  border: 1px solid #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.header-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Name & tagline */
+.name {
+  font-size: 2.2rem;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  color: #555;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+/* Divider */
+.header-divider {
+  width: 48px;
+  height: 1px;
+  background: #111;
+  margin: 20px auto;
+}
+
+/* Contact row */
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px 0;
+  font-size: 0.82rem;
+}
+
+.contact-sep {
+  color: #bbb;
+  padding: 0 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #111;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.contact-item:hover {
+  text-decoration: underline;
+}
+
+.contact-icon {
+  font-style: normal;
+  color: #555;
+}
+
+/* LinkedIn badge look */
+.contact-li {
+  font-size: 0.65rem;
+  font-weight: bold;
+  background: #0077b5;
+  color: #fff;
+  padding: 1px 4px;
+  letter-spacing: 0;
+}
+
+/* Bio blurb */
+.bio {
+  font-size: 0.88rem;
+  line-height: 1.75;
+  color: #333;
+  max-width: 600px;
+  margin: 28px auto 0;
+  text-align: center;
+}
+
+/* ── Sections ── */
+section {
+  margin-bottom: 72px;
+}
+
+section h2 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 24px;
+  letter-spacing: 0.03em;
+}
+
+/* ── Flex row ── */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  flex: 0 0 260px;
+  width: 260px;
+  border: 1px solid #111;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: auto;
+}
+
+/* ── Experience ── */
+.exp-card .job-title {
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+.exp-card .company {
+  font-size: 0.9rem;
+  color: #555;
+}
+.exp-card .dates {
+  font-size: 0.85rem;
+  color: #888;
+}
+.exp-card .desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-top: 6px;
+}
+
+/* ── Projects ── */
+.proj-card .proj-img {
+  display: block;
+  width: calc(100% + 40px);
+  height: 160px;
+  object-fit: cover;
+  margin: -20px -20px 12px -20px;
+  border-bottom: 1px solid #111;
+}
+
+.proj-card .proj-title {
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+.proj-card .proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.proj-card .tag {
+  font-size: 0.8rem;
+  border: 1px solid #111;
+  padding: 2px 8px;
+  letter-spacing: 0.04em;
+}
+
+.proj-card .proj-dates {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: -2px;
+}
+
+.proj-card .proj-link {
+  font-size: 0.85rem;
+  color: #111;
+  text-decoration: underline;
+  margin-top: auto;
+  padding-top: 6px;
+}
+
+.proj-card .desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-top: 6px;
+}
+
+/* ── Tech tag colors ── */
+/* Remove default border when colored */
+.proj-card .tag[data-tech] {
+  border-color: transparent;
+  color: #fff;
+}
+
+/* HashiCorp purple */
+.tag[data-tech="terraform"] {
+  background: #7b42bc;
+}
+
+/* AWS smile orange — dark text for contrast */
+.tag[data-tech="aws"] {
+  background: #ff9900;
+  color: #111 !important;
+}
+
+/* Lambda uses a slightly deeper orange to sit apart from plain AWS */
+.tag[data-tech="lambda"] {
+  background: #c75109;
+}
+
+/* DynamoDB blue */
+.tag[data-tech="dynamodb"] {
+  background: #2e6da4;
+}
+
+/* SNS red */
+.tag[data-tech="sns"] {
+  background: #c0392b;
+}
+
+/* C# / .NET purple */
+.tag[data-tech="csharp"] {
+  background: #68217a;
+}
+
+/* Unity near-black */
+.tag[data-tech="unity"] {
+  background: #222222;
+}
+
+/* Risk of Rain 2 — deep crimson */
+.tag[data-tech="ror2api"] {
+  background: #8b0000;
+}
+
+/* Godot blue */
+.tag[data-tech="godot"] {
+  background: #478cbf;
+}
+
+/* JSON green */
+.tag[data-tech="json"] {
+  background: #1e7a44;
+}
+
+/* Svelte orange-red */
+.tag[data-tech="svelte"] {
+  background: #ff3e00;
+}
+
+/* TypeScript blue */
+.tag[data-tech="typescript"] {
+  background: #3178c6;
+}
+
+/* HTML5 orange */
+.tag[data-tech="html"] {
+  background: #e34f26;
+}
+
+/* CSS blue */
+.tag[data-tech="css"] {
+  background: #1572b6;
+}
+
+/* JavaScript yellow — dark text for contrast */
+.tag[data-tech="javascript"] {
+  background: #f7df1e;
+  color: #111 !important;
+}
+
+/* MIPS — neutral slate */
+.tag[data-tech="mips"] {
+  background: #4a5568;
+}
